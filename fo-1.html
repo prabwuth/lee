@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Slide#O1</title>
+<link rel="icon" href="https://img.icons8.com/scribby/50/l.png" type="image/x-icon">
+</head>
+
+<style>
+    .yt-gallery-wrapper {
+        width: 100%; max-width: 900px; margin: 0 auto; padding: 20px 0;
+        font-family: sans-serif;
+    }
+
+    /* --- Preview Section --- */
+    .yt-preview-container {
+        width: 95%; margin: 0 auto 20px auto;
+        border-radius: 12px; overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        background: #000;
+        scroll-margin-top: 20px; /* ระยะห่างเมื่อ scroll มาถึง */
+    }
+    .yt-preview-link { display: block; width: 100%; height: auto; text-decoration: none; }
+    .yt-preview-img {
+        width: 100%; height: auto; display: block;
+        transition: opacity 0.2s;
+    }
+
+    /* --- Carousel Section --- */
+    .yt-carousel-wrapper {
+        position: relative; /* เพื่อวางลูกศร */
+        width: 100%;
+        padding: 0 50px; /* เว้นที่ให้ลูกศร */
+    }
+
+    .yt-track {
+        display: flex; gap: 10px; overflow-x: auto; padding: 10px 0;
+        scroll-behavior: smooth; -webkit-overflow-scrolling: touch;
+        cursor: grab; scrollbar-width: none; -ms-overflow-style: none;
+    }
+    .yt-track::-webkit-scrollbar { display: none; }
+    .yt-track.active { cursor: grabbing; scroll-behavior: auto; }
+
+    .yt-thumb-item {
+        flex: 0 0 25%; /* Mobile Width */
+        max-width: 180px;
+        border-radius: 6px; overflow: hidden;
+        border: 3px solid transparent;
+        transition: all 0.2s;
+        opacity: 0.7;
+        cursor: pointer;
+        user-select: none;
+    }
+    .yt-thumb-item img { width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none; }
+    
+    .yt-thumb-item.active { border-color: #e74c3c; opacity: 1; transform: scale(1.05); }
+    .yt-thumb-item:hover { opacity: 1; }
+
+    /* --- Carousel Arrows (Attach Picture Style) --- */
+    .yt-car-btn {
+        position: absolute;
+        top: 50%; transform: translateY(-50%);
+        width: 40px; height: 60px; /* ทรงสี่เหลี่ยมผืนผ้า */
+        background-color: rgba(0, 0, 0, 0.3); /* สีพื้นหลังจางๆ */
+        border: none; cursor: pointer; z-index: 10;
+        display: flex; align-items: center; justify-content: center;
+        transition: background-color 0.3s;
+    }
+    .yt-car-btn:hover { background-color: rgba(0, 0, 0, 0.6); }
+    .yt-car-btn svg { width: 24px; height: 24px; fill: #fff; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.5)); }
+    
+    .yt-car-prev { left: 0; border-radius: 0 6px 6px 0; }
+    .yt-car-next { right: 0; border-radius: 6px 0 0 6px; }
+
+    /* Responsive */
+    @media (min-width: 600px) { .yt-thumb-item { flex: 0 0 20%; } }
+    @media (min-width: 900px) { .yt-thumb-item { flex: 0 0 16%; } }
+</style>
+<body>
+<div class="yt-gallery-wrapper" id="yt_gallery_ieqj26k7n">
+    
+    <div class="yt-preview-container" id="yt_preview_container_ieqj26k7n">
+        <a href="https://img.youtube.com/vi/eb-D2UL5pzA/oardefault.jpg" target="_blank" class="yt-preview-link" id="yt_preview_link_ieqj26k7n">
+            <img src="https://img.youtube.com/vi/eb-D2UL5pzA/oardefault.jpg" alt="Preview" class="yt-preview-img" id="yt_preview_img_ieqj26k7n">
+        </a>
+    </div>
+
+    <div class="yt-carousel-wrapper">
+        <button class="yt-car-btn yt-car-prev" aria-label="Scroll Left">
+            <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        </button>
+
+        <div class="yt-track" id="yt_track_ieqj26k7n">
+            
+            <div class="yt-thumb-item active" data-index="0">
+                <img src="https://img.youtube.com/vi/eb-D2UL5pzA/oardefault.jpg" loading="lazy" alt="Gallery Image 1" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="1">
+                <img src="https://img.youtube.com/vi/tbiC0i1LSNI/oardefault.jpg" loading="lazy" alt="Gallery Image 2" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="2">
+                <img src="https://img.youtube.com/vi/yOnJbNb3Wpc/oardefault.jpg" loading="lazy" alt="Gallery Image 3" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="3">
+                <img src="https://img.youtube.com/vi/DwFSRYmjmI0/oardefault.jpg" loading="lazy" alt="Gallery Image 4" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="4">
+                <img src="https://img.youtube.com/vi/9n0FdKumJ7U/oardefault.jpg" loading="lazy" alt="Gallery Image 5" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="5">
+                <img src="https://img.youtube.com/vi/9n0FdKumJ7U/maxresdefault.jpg" loading="lazy" alt="Gallery Image 6" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="6">
+                <img src="https://img.youtube.com/vi/v5AJNi7Dhoo/oardefault.jpg" loading="lazy" alt="Gallery Image 7" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="7">
+                <img src="https://img.youtube.com/vi/eECazYG0xaI/oardefault.jpg" loading="lazy" alt="Gallery Image 8" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="8">
+                <img src="https://img.youtube.com/vi/EL3TOj08GmE/oardefault.jpg" loading="lazy" alt="Gallery Image 9" draggable="false">
+            </div>
+        </div>
+
+        <button class="yt-car-btn yt-car-next" aria-label="Scroll Right">
+            <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+        </button>
+    </div>
+</div>
+
+<script>
+(function() {
+    const slides = [{"imgSrc":"https://img.youtube.com/vi/eb-D2UL5pzA/oardefault.jpg","alt":"Gallery Image 1"},{"imgSrc":"https://img.youtube.com/vi/tbiC0i1LSNI/oardefault.jpg","alt":"Gallery Image 2"},{"imgSrc":"https://img.youtube.com/vi/yOnJbNb3Wpc/oardefault.jpg","alt":"Gallery Image 3"},{"imgSrc":"https://img.youtube.com/vi/DwFSRYmjmI0/oardefault.jpg","alt":"Gallery Image 4"},{"imgSrc":"https://img.youtube.com/vi/9n0FdKumJ7U/oardefault.jpg","alt":"Gallery Image 5"},{"imgSrc":"https://img.youtube.com/vi/9n0FdKumJ7U/maxresdefault.jpg","alt":"Gallery Image 6"},{"imgSrc":"https://img.youtube.com/vi/v5AJNi7Dhoo/oardefault.jpg","alt":"Gallery Image 7"},{"imgSrc":"https://img.youtube.com/vi/eECazYG0xaI/oardefault.jpg","alt":"Gallery Image 8"},{"imgSrc":"https://img.youtube.com/vi/EL3TOj08GmE/oardefault.jpg","alt":"Gallery Image 9"}];
+    
+    const wrapper = document.getElementById('yt_gallery_ieqj26k7n');
+    const previewContainer = document.getElementById('yt_preview_container_ieqj26k7n');
+    const previewImg = document.getElementById('yt_preview_img_ieqj26k7n');
+    const previewLink = document.getElementById('yt_preview_link_ieqj26k7n');
+    const track = document.getElementById('yt_track_ieqj26k7n');
+    const thumbs = track.querySelectorAll('.yt-thumb-item');
+    
+    const prevBtn = wrapper.querySelector('.yt-car-prev');
+    const nextBtn = wrapper.querySelector('.yt-car-next');
+
+    // --- Function: Select Image ---
+    function selectImage(index) {
+        const data = slides[index];
+        
+        // Update Preview
+        previewImg.style.opacity = '0.5';
+        setTimeout(() => {
+            previewImg.src = data.imgSrc;
+            previewLink.href = data.imgSrc;
+            previewImg.style.opacity = '1';
+        }, 150);
+
+        // Update Active Class
+        thumbs.forEach(t => t.classList.remove('active'));
+        thumbs[index].classList.add('active');
+
+        // Scroll page to Preview (Auto Scroll)
+        previewContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    // --- Listeners: Thumbnails ---
+    thumbs.forEach((thumb, idx) => {
+        thumb.addEventListener('click', () => {
+            selectImage(idx);
+        });
+    });
+
+    // --- Listeners: Carousel Navigation Arrows ---
+    prevBtn.addEventListener('click', () => {
+        track.scrollBy({ left: -200, behavior: 'smooth' });
+    });
+    nextBtn.addEventListener('click', () => {
+        track.scrollBy({ left: 200, behavior: 'smooth' });
+    });
+
+    // --- Logic: Drag & Scroll Wheel (Original) ---
+    let isDown = false, startX, scrollLeft;
+    track.addEventListener('mousedown', (e) => {
+        isDown = true; track.classList.add('active');
+        startX = e.pageX - track.offsetLeft; scrollLeft = track.scrollLeft;
+    });
+    track.addEventListener('mouseleave', () => { isDown = false; track.classList.remove('active'); });
+    track.addEventListener('mouseup', () => { isDown = false; track.classList.remove('active'); });
+    track.addEventListener('mousemove', (e) => {
+        if(!isDown) return; e.preventDefault();
+        const x = e.pageX - track.offsetLeft; const walk = (x - startX) * 2;
+        track.scrollLeft = scrollLeft - walk;
+    });
+    
+    // Scroll Wheel Support
+    track.addEventListener('wheel', (e) => {
+        if (e.deltaY !== 0) { 
+            e.preventDefault(); 
+            track.scrollLeft += e.deltaY * 1.5; 
+        }
+    }, { passive: false });
+
+})();
+</script>
+
+</body>
+</html>
