@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<style>
+
+body{
+margin:0;
+background:#000;
+}
+
+.container{
+height:100vh;
+overflow-y:scroll;
+scroll-snap-type:y mandatory;
+}
+
+.yt-item{
+height:100vh;
+scroll-snap-align:start;
+position:relative;
+}
+
+.player{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="yt-item"><div class="player" id="player0"></div></div><div class="yt-item"><div class="player" id="player1"></div></div><div class="yt-item"><div class="player" id="player2"></div></div><div class="yt-item"><div class="player" id="player3"></div></div><div class="yt-item"><div class="player" id="player4"></div></div><div class="yt-item"><div class="player" id="player5"></div></div><div class="yt-item"><div class="player" id="player6"></div></div><div class="yt-item"><div class="player" id="player7"></div></div><div class="yt-item"><div class="player" id="player8"></div></div><div class="yt-item"><div class="player" id="player9"></div></div><div class="yt-item"><div class="player" id="player10"></div></div><div class="yt-item"><div class="player" id="player11"></div></div><div class="yt-item"><div class="player" id="player12"></div></div><div class="yt-item"><div class="player" id="player13"></div></div><div class="yt-item"><div class="player" id="player14"></div></div><div class="yt-item"><div class="player" id="player15"></div></div><div class="yt-item"><div class="player" id="player16"></div></div><div class="yt-item"><div class="player" id="player17"></div></div><div class="yt-item"><div class="player" id="player18"></div></div><div class="yt-item"><div class="player" id="player19"></div></div><div class="yt-item"><div class="player" id="player20"></div></div><div class="yt-item"><div class="player" id="player21"></div></div><div class="yt-item"><div class="player" id="player22"></div></div><div class="yt-item"><div class="player" id="player23"></div></div><div class="yt-item"><div class="player" id="player24"></div></div><div class="yt-item"><div class="player" id="player25"></div></div><div class="yt-item"><div class="player" id="player26"></div></div><div class="yt-item"><div class="player" id="player27"></div></div><div class="yt-item"><div class="player" id="player28"></div></div><div class="yt-item"><div class="player" id="player29"></div></div><div class="yt-item"><div class="player" id="player30"></div></div><div class="yt-item"><div class="player" id="player31"></div></div><div class="yt-item"><div class="player" id="player32"></div></div><div class="yt-item"><div class="player" id="player33"></div></div><div class="yt-item"><div class="player" id="player34"></div></div><div class="yt-item"><div class="player" id="player35"></div></div><div class="yt-item"><div class="player" id="player36"></div></div><div class="yt-item"><div class="player" id="player37"></div></div><div class="yt-item"><div class="player" id="player38"></div></div><div class="yt-item"><div class="player" id="player39"></div></div><div class="yt-item"><div class="player" id="player40"></div></div><div class="yt-item"><div class="player" id="player41"></div></div><div class="yt-item"><div class="player" id="player42"></div></div><div class="yt-item"><div class="player" id="player43"></div></div><div class="yt-item"><div class="player" id="player44"></div></div><div class="yt-item"><div class="player" id="player45"></div></div><div class="yt-item"><div class="player" id="player46"></div></div><div class="yt-item"><div class="player" id="player47"></div></div><div class="yt-item"><div class="player" id="player48"></div></div><div class="yt-item"><div class="player" id="player49"></div></div><div class="yt-item"><div class="player" id="player50"></div></div><div class="yt-item"><div class="player" id="player51"></div></div><div class="yt-item"><div class="player" id="player52"></div></div><div class="yt-item"><div class="player" id="player53"></div></div><div class="yt-item"><div class="player" id="player54"></div></div><div class="yt-item"><div class="player" id="player55"></div></div><div class="yt-item"><div class="player" id="player56"></div></div><div class="yt-item"><div class="player" id="player57"></div></div><div class="yt-item"><div class="player" id="player58"></div></div><div class="yt-item"><div class="player" id="player59"></div></div><div class="yt-item"><div class="player" id="player60"></div></div><div class="yt-item"><div class="player" id="player61"></div></div><div class="yt-item"><div class="player" id="player62"></div></div><div class="yt-item"><div class="player" id="player63"></div></div><div class="yt-item"><div class="player" id="player64"></div></div><div class="yt-item"><div class="player" id="player65"></div></div><div class="yt-item"><div class="player" id="player66"></div></div><div class="yt-item"><div class="player" id="player67"></div></div><div class="yt-item"><div class="player" id="player68"></div></div><div class="yt-item"><div class="player" id="player69"></div></div><div class="yt-item"><div class="player" id="player70"></div></div><div class="yt-item"><div class="player" id="player71"></div></div><div class="yt-item"><div class="player" id="player72"></div></div><div class="yt-item"><div class="player" id="player73"></div></div><div class="yt-item"><div class="player" id="player74"></div></div><div class="yt-item"><div class="player" id="player75"></div></div><div class="yt-item"><div class="player" id="player76"></div></div><div class="yt-item"><div class="player" id="player77"></div></div><div class="yt-item"><div class="player" id="player78"></div></div><div class="yt-item"><div class="player" id="player79"></div></div><div class="yt-item"><div class="player" id="player80"></div></div><div class="yt-item"><div class="player" id="player81"></div></div><div class="yt-item"><div class="player" id="player82"></div></div><div class="yt-item"><div class="player" id="player83"></div></div><div class="yt-item"><div class="player" id="player84"></div></div><div class="yt-item"><div class="player" id="player85"></div></div><div class="yt-item"><div class="player" id="player86"></div></div><div class="yt-item"><div class="player" id="player87"></div></div><div class="yt-item"><div class="player" id="player88"></div></div><div class="yt-item"><div class="player" id="player89"></div></div><div class="yt-item"><div class="player" id="player90"></div></div><div class="yt-item"><div class="player" id="player91"></div></div><div class="yt-item"><div class="player" id="player92"></div></div><div class="yt-item"><div class="player" id="player93"></div></div><div class="yt-item"><div class="player" id="player94"></div></div><div class="yt-item"><div class="player" id="player95"></div></div><div class="yt-item"><div class="player" id="player96"></div></div><div class="yt-item"><div class="player" id="player97"></div></div><div class="yt-item"><div class="player" id="player98"></div></div><div class="yt-item"><div class="player" id="player99"></div></div><div class="yt-item"><div class="player" id="player100"></div></div><div class="yt-item"><div class="player" id="player101"></div></div><div class="yt-item"><div class="player" id="player102"></div></div><div class="yt-item"><div class="player" id="player103"></div></div><div class="yt-item"><div class="player" id="player104"></div></div><div class="yt-item"><div class="player" id="player105"></div></div><div class="yt-item"><div class="player" id="player106"></div></div><div class="yt-item"><div class="player" id="player107"></div></div><div class="yt-item"><div class="player" id="player108"></div></div><div class="yt-item"><div class="player" id="player109"></div></div><div class="yt-item"><div class="player" id="player110"></div></div><div class="yt-item"><div class="player" id="player111"></div></div><div class="yt-item"><div class="player" id="player112"></div></div><div class="yt-item"><div class="player" id="player113"></div></div><div class="yt-item"><div class="player" id="player114"></div></div><div class="yt-item"><div class="player" id="player115"></div></div><div class="yt-item"><div class="player" id="player116"></div></div><div class="yt-item"><div class="player" id="player117"></div></div><div class="yt-item"><div class="player" id="player118"></div></div><div class="yt-item"><div class="player" id="player119"></div></div><div class="yt-item"><div class="player" id="player120"></div></div><div class="yt-item"><div class="player" id="player121"></div></div><div class="yt-item"><div class="player" id="player122"></div></div><div class="yt-item"><div class="player" id="player123"></div></div><div class="yt-item"><div class="player" id="player124"></div></div><div class="yt-item"><div class="player" id="player125"></div></div><div class="yt-item"><div class="player" id="player126"></div></div><div class="yt-item"><div class="player" id="player127"></div></div><div class="yt-item"><div class="player" id="player128"></div></div><div class="yt-item"><div class="player" id="player129"></div></div><div class="yt-item"><div class="player" id="player130"></div></div><div class="yt-item"><div class="player" id="player131"></div></div><div class="yt-item"><div class="player" id="player132"></div></div><div class="yt-item"><div class="player" id="player133"></div></div><div class="yt-item"><div class="player" id="player134"></div></div><div class="yt-item"><div class="player" id="player135"></div></div><div class="yt-item"><div class="player" id="player136"></div></div><div class="yt-item"><div class="player" id="player137"></div></div><div class="yt-item"><div class="player" id="player138"></div></div><div class="yt-item"><div class="player" id="player139"></div></div><div class="yt-item"><div class="player" id="player140"></div></div><div class="yt-item"><div class="player" id="player141"></div></div><div class="yt-item"><div class="player" id="player142"></div></div><div class="yt-item"><div class="player" id="player143"></div></div><div class="yt-item"><div class="player" id="player144"></div></div><div class="yt-item"><div class="player" id="player145"></div></div><div class="yt-item"><div class="player" id="player146"></div></div><div class="yt-item"><div class="player" id="player147"></div></div><div class="yt-item"><div class="player" id="player148"></div></div><div class="yt-item"><div class="player" id="player149"></div></div><div class="yt-item"><div class="player" id="player150"></div></div><div class="yt-item"><div class="player" id="player151"></div></div><div class="yt-item"><div class="player" id="player152"></div></div><div class="yt-item"><div class="player" id="player153"></div></div><div class="yt-item"><div class="player" id="player154"></div></div><div class="yt-item"><div class="player" id="player155"></div></div><div class="yt-item"><div class="player" id="player156"></div></div><div class="yt-item"><div class="player" id="player157"></div></div><div class="yt-item"><div class="player" id="player158"></div></div><div class="yt-item"><div class="player" id="player159"></div></div><div class="yt-item"><div class="player" id="player160"></div></div><div class="yt-item"><div class="player" id="player161"></div></div><div class="yt-item"><div class="player" id="player162"></div></div><div class="yt-item"><div class="player" id="player163"></div></div><div class="yt-item"><div class="player" id="player164"></div></div><div class="yt-item"><div class="player" id="player165"></div></div><div class="yt-item"><div class="player" id="player166"></div></div><div class="yt-item"><div class="player" id="player167"></div></div><div class="yt-item"><div class="player" id="player168"></div></div><div class="yt-item"><div class="player" id="player169"></div></div><div class="yt-item"><div class="player" id="player170"></div></div><div class="yt-item"><div class="player" id="player171"></div></div><div class="yt-item"><div class="player" id="player172"></div></div><div class="yt-item"><div class="player" id="player173"></div></div><div class="yt-item"><div class="player" id="player174"></div></div><div class="yt-item"><div class="player" id="player175"></div></div><div class="yt-item"><div class="player" id="player176"></div></div><div class="yt-item"><div class="player" id="player177"></div></div><div class="yt-item"><div class="player" id="player178"></div></div><div class="yt-item"><div class="player" id="player179"></div></div><div class="yt-item"><div class="player" id="player180"></div></div><div class="yt-item"><div class="player" id="player181"></div></div><div class="yt-item"><div class="player" id="player182"></div></div><div class="yt-item"><div class="player" id="player183"></div></div><div class="yt-item"><div class="player" id="player184"></div></div><div class="yt-item"><div class="player" id="player185"></div></div><div class="yt-item"><div class="player" id="player186"></div></div><div class="yt-item"><div class="player" id="player187"></div></div><div class="yt-item"><div class="player" id="player188"></div></div><div class="yt-item"><div class="player" id="player189"></div></div><div class="yt-item"><div class="player" id="player190"></div></div><div class="yt-item"><div class="player" id="player191"></div></div><div class="yt-item"><div class="player" id="player192"></div></div><div class="yt-item"><div class="player" id="player193"></div></div><div class="yt-item"><div class="player" id="player194"></div></div><div class="yt-item"><div class="player" id="player195"></div></div><div class="yt-item"><div class="player" id="player196"></div></div><div class="yt-item"><div class="player" id="player197"></div></div><div class="yt-item"><div class="player" id="player198"></div></div><div class="yt-item"><div class="player" id="player199"></div></div><div class="yt-item"><div class="player" id="player200"></div></div><div class="yt-item"><div class="player" id="player201"></div></div><div class="yt-item"><div class="player" id="player202"></div></div><div class="yt-item"><div class="player" id="player203"></div></div><div class="yt-item"><div class="player" id="player204"></div></div><div class="yt-item"><div class="player" id="player205"></div></div><div class="yt-item"><div class="player" id="player206"></div></div><div class="yt-item"><div class="player" id="player207"></div></div><div class="yt-item"><div class="player" id="player208"></div></div><div class="yt-item"><div class="player" id="player209"></div></div><div class="yt-item"><div class="player" id="player210"></div></div><div class="yt-item"><div class="player" id="player211"></div></div><div class="yt-item"><div class="player" id="player212"></div></div><div class="yt-item"><div class="player" id="player213"></div></div><div class="yt-item"><div class="player" id="player214"></div></div><div class="yt-item"><div class="player" id="player215"></div></div><div class="yt-item"><div class="player" id="player216"></div></div><div class="yt-item"><div class="player" id="player217"></div></div><div class="yt-item"><div class="player" id="player218"></div></div><div class="yt-item"><div class="player" id="player219"></div></div><div class="yt-item"><div class="player" id="player220"></div></div><div class="yt-item"><div class="player" id="player221"></div></div><div class="yt-item"><div class="player" id="player222"></div></div><div class="yt-item"><div class="player" id="player223"></div></div><div class="yt-item"><div class="player" id="player224"></div></div><div class="yt-item"><div class="player" id="player225"></div></div><div class="yt-item"><div class="player" id="player226"></div></div><div class="yt-item"><div class="player" id="player227"></div></div><div class="yt-item"><div class="player" id="player228"></div></div><div class="yt-item"><div class="player" id="player229"></div></div><div class="yt-item"><div class="player" id="player230"></div></div><div class="yt-item"><div class="player" id="player231"></div></div><div class="yt-item"><div class="player" id="player232"></div></div><div class="yt-item"><div class="player" id="player233"></div></div><div class="yt-item"><div class="player" id="player234"></div></div><div class="yt-item"><div class="player" id="player235"></div></div><div class="yt-item"><div class="player" id="player236"></div></div><div class="yt-item"><div class="player" id="player237"></div></div><div class="yt-item"><div class="player" id="player238"></div></div><div class="yt-item"><div class="player" id="player239"></div></div>
+
+</div>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+
+<script>
+
+let ids=["gGLFBN2yGn8","bDfXZyyZcko","P9nxE4n0fso","pIwjfUhtvzM","WhPbCm--RHc","MuoCpldnxBU","dbKpJRj9gwQ","tQR9EJgSQiU","DRJZyn66FxM","N_0QggM29CQ","QlSt56zUgqo","2LLxu2ubT4k","lXWOmEYL6Mc","OC_NZCcUdQE","59vVY-MhPgg","j_Rn_GJfX14","n35WFMzr96s","Y8xn_kvE3mM","2Uajn7ogcCM","lExt-FI6gEY","KFAFexLU8xc","Uq69RDjnHYQ","u2pIiWB9wA8","ea3UlWCPg_A","f1m6UJVQm0I","PPZoZ-itmqs","OzQJ0Tpjvyw","5i1srdPNlC0","vu8yU3ZkEVQ","YLJUETJqu9Q","Sv30DHuJKmY","Dr04RYvbSgM","Gi7BO-Ne3bQ","foeVtGqS9xg","k6LK3Samp9k","dau2p9euWLY","HA1DTlf-2Ww","43c-wskEFVw","n8dBs-RPWqg","_QXFOp5_9nA","eJWBpb2pJSU","7KMYH_fYets","dgsz1JVdkA8","2FxKJ7A_fMg","MtUvoAHJMR0","SMTbdelIGic","SPY7EczmGVM","Eyo-JU0kgUw","-hhXfMouFKA","RRWfLkppq9o","gXqjcp9wyYY","eh5nf4ha3K4","Hzsh1izD9xQ","O3BhocozPtU","LpCkp7VnKkw","No-SHJJc9rE","R50gHB8j7NE","uWlqShJV9P8","OJVd3mn7LJw","ADfKEOasT3Q","jG6OX_99Guk","SSeirqHC3mE","7aXjjkBQJ2k","oSeIjDbCSys","ZqGxxfGHbS0","7nQrdUPco-g","I5mLd-AYiDc","LwifSCDG9IE","NPbMCIbfZFY","Je7lIOnTq_c","gHUk3I4rf0s","0BNtIu3KYsw","ps12SOyL_rY","lllam7fIf1A","eddCmmEvOtc","CXEKNBjEGTs","d0qBPto9nk4","9o4toHNXvRs","mrJrl_gqBx8","-nYEKq-wGXQ","oqMsEKCBnuE","dvE9mgDBpqw","Ic0a2FycUxY","u4OyBpS0vdQ","FxQEW26ZAuw","23CSvBAvvVg","oWIkk_toKcQ","F3wtDVagQ3Q","xl1q_nsxnoM","3ImYjHMQyng","xl1q_nsxnoM","MVYfFMhLAFw","mF1Wop__Xmc","cI85CcQLvuQ","A7QHM38R8Fc","Qjeieu3iTO0","rjLyFRKLesI","mcVMwAKyVnc","dAaJz_uy_nk","ZZg14-KGyOc","gBMM0I0MpqQ","2RJmiILidcM","J0q_EXHAiSg","DnUVjhL1Sok","Za4-Ij2TiF8","PMUP8mF6BCY","nhKYxnSgG0w","ocQRTUlh6CQ","mcKy4zeAot8","eMuP-ibJgjE","wOv5QdHAkzs","_uyaJUjEEIs","Li0RRoBVQRQ","yhHPfcqrVeM","EP-SPW7PrS8","P3_YoyGgoD0","zgqVlRcI988","z5qWvrUKWOA","Mx4eSIp_TMk","5CLiYICFr6Q","qc42ADiXMes","da__eW9ePH0","Cb2DxF4lbEU","oxXd2gKTBVk","tLd82b1T80Q","VymKXTl0uhg","yfT4d7qi_U8","k3eQcJ07lGM","rGoqtUaxOeo","B2rbCZo19q4","qtZ99_3WcXo","XnBjaKGZI8s","KZAfczE3oR8","29IqOnY429Y","cS6MB-gOBMk","OpSw9Nk84HM","Llbnmn_2DAw","8hrYh00eRh4","yc731isWyfM","mI0rrFUDIUM","gly3Pc4v-ec","nE7QRLfkVKQ","7GzCj6aqKaQ","BOFhxBXif0A","JX77WhDvmrw","34UcpiL-zak","ullBJrda2_I","brR4wAsp53w","67RxAwi5waA","XmG6nc2kiZg","ZdOeX937-HM","cu6GtCqPO0M","KO8rtxteNHY","Iuzch4ny3xI","OvLlShr7XOs","Ey6XxzLuFKk","toKQcae72mY","5es0EtFicA8","VkM1zqw4v98","ADSMzCEnQ6g","iGgrDVkLrlA","tYBN1OuBQYI","DpFI3veCb7I","ElyLEAxxaxY","hrASPYH-z5s","JF4s4UhbT5Y","9SfmJOJFJ2Y","IvShLY40Sa4","JvSA0EDzhs8","gU5ZXViJHAg","mw6kBml3pM8","RzAl2zCnLX4","4e-0UeZ67gU","8tc7uFHOWRo","iVLuxcLqG34","f9WGw_M7sIw","xJY_vS7jhYk","m4s-No8eRGc","NavZMkmRDAU","J8T0VTbnFoo","Oq53dCstN-0","HEERC-TuBs8","clW4cIvf-Mc","aqTdA2QmXX0","vFdIZqG4dmM","ojMj94jxrXM","DAc6_4hmRfw","JGv8BymxET8","doxE-aDOxRw","hPE1MJV4x9E","zM6-VG7Z4qg","4SXQ_e6enMw","6m4nvlK5d6U","9tTv7fEPm6g","yxJSGvOUd5o","gHGTwMLuomg","A9ejFxzOLps","d4j_TnQO2tU","9u7aMXR67KE","WNh3SIK01xY","p9do0BUCGuw","X2muF1OcVHk","IXuxlA3mGec","9YGhDwK0z1g","j7EGHQEAxo4","rmMYEhSWMHY","0VuiU13fHiI","zK_3eMv7Dyw","E1Oi_MgdMK0","WgOuumd6c0M","yKQx4ejtIRw","3Db_AI1w8GY","Ihzqdiuq7rg","ypcivUglujU","D95TQM65zQQ","itKXcacp3SU","P8QxJjy7BPk","3kF72HDGUrY","Ja8d0SI1yCs","icD1RugM2-s","OGFe8B1GCqM","vV_lM5c5Has","4LvlDLwK478","9u7aMXR67KE","YSKrAJ-rC00","Pt-yBqZy99A","06Z_F8eUvHs","0kXkEPCaQhU","LDM9b1zzU8A","q973VoVgLLU","tcRohw3vSQI","czW7SJ7wNOQ","z45lLGOZa_U","hGYT7s8LEDs","UV49i9pqZjU","UV49i9pqZjU","-qtf91hwTf4","QNHNDxkT5vs","pKyvdsHf2VU","kBafj2tj0eo"]
+
+let players=[]
+
+function onYouTubeIframeAPIReady(){
+
+ids.forEach((id,i)=>{
+
+players[i]=new YT.Player("player"+i,{
+videoId:id,
+playerVars:{
+autoplay:0,
+controls:1,
+mute:0,
+playsinline:1,
+rel:0,
+modestbranding:1
+}
+})
+
+})
+
+observe()
+
+}
+
+function observe(){
+
+let items=document.querySelectorAll(".yt-item")
+
+let observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+let index=[...items].indexOf(entry.target)
+
+let player=players[index]
+
+if(!player) return
+
+if(entry.isIntersecting){
+
+player.playVideo()
+
+}else{
+
+player.pauseVideo()
+
+}
+
+})
+
+},{threshold:0.65})
+
+items.forEach(el=>observer.observe(el))
+
+}
+
+</script>
+
+</body>
+</html>
