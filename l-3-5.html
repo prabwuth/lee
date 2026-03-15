@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+
+<style>
+
+body{
+margin:0;
+background:#000;
+overflow:hidden;
+}
+
+.feed{
+height:100vh;
+overflow-y:scroll;
+scroll-snap-type:y mandatory;
+}
+
+.item{
+height:100vh;
+scroll-snap-align:start;
+position:relative;
+}
+
+#player{
+position:absolute;
+width:100%;
+height:100%;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="feed">
+
+<div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div><div class="item"></div>
+
+</div>
+
+<div id="player"></div>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+
+<script>
+
+let ids=["gGLFBN2yGn8","bDfXZyyZcko","P9nxE4n0fso","pIwjfUhtvzM","WhPbCm--RHc","MuoCpldnxBU","dbKpJRj9gwQ","tQR9EJgSQiU","DRJZyn66FxM","N_0QggM29CQ","QlSt56zUgqo","2LLxu2ubT4k","lXWOmEYL6Mc","OC_NZCcUdQE","59vVY-MhPgg","j_Rn_GJfX14","n35WFMzr96s","Y8xn_kvE3mM","2Uajn7ogcCM","lExt-FI6gEY","KFAFexLU8xc","Uq69RDjnHYQ","u2pIiWB9wA8","ea3UlWCPg_A","f1m6UJVQm0I","PPZoZ-itmqs","OzQJ0Tpjvyw","5i1srdPNlC0","vu8yU3ZkEVQ","YLJUETJqu9Q","Sv30DHuJKmY","Dr04RYvbSgM","Gi7BO-Ne3bQ","foeVtGqS9xg","k6LK3Samp9k","dau2p9euWLY","HA1DTlf-2Ww","43c-wskEFVw","n8dBs-RPWqg","_QXFOp5_9nA","eJWBpb2pJSU","7KMYH_fYets","dgsz1JVdkA8","2FxKJ7A_fMg","MtUvoAHJMR0","SMTbdelIGic","SPY7EczmGVM","Eyo-JU0kgUw","-hhXfMouFKA","RRWfLkppq9o","gXqjcp9wyYY","eh5nf4ha3K4","Hzsh1izD9xQ","O3BhocozPtU","LpCkp7VnKkw","No-SHJJc9rE","R50gHB8j7NE","uWlqShJV9P8","OJVd3mn7LJw","ADfKEOasT3Q","jG6OX_99Guk","SSeirqHC3mE","7aXjjkBQJ2k","oSeIjDbCSys","ZqGxxfGHbS0","7nQrdUPco-g","I5mLd-AYiDc","LwifSCDG9IE","NPbMCIbfZFY","Je7lIOnTq_c","gHUk3I4rf0s","0BNtIu3KYsw","ps12SOyL_rY","lllam7fIf1A","eddCmmEvOtc","CXEKNBjEGTs","d0qBPto9nk4","9o4toHNXvRs","mrJrl_gqBx8","-nYEKq-wGXQ","oqMsEKCBnuE","dvE9mgDBpqw","Ic0a2FycUxY","u4OyBpS0vdQ","FxQEW26ZAuw","23CSvBAvvVg","oWIkk_toKcQ","F3wtDVagQ3Q","xl1q_nsxnoM","3ImYjHMQyng","xl1q_nsxnoM","MVYfFMhLAFw","mF1Wop__Xmc","cI85CcQLvuQ","A7QHM38R8Fc","Qjeieu3iTO0","rjLyFRKLesI","mcVMwAKyVnc","dAaJz_uy_nk","ZZg14-KGyOc","gBMM0I0MpqQ","2RJmiILidcM","J0q_EXHAiSg","DnUVjhL1Sok","Za4-Ij2TiF8","PMUP8mF6BCY","nhKYxnSgG0w","ocQRTUlh6CQ","mcKy4zeAot8","eMuP-ibJgjE","wOv5QdHAkzs","_uyaJUjEEIs","Li0RRoBVQRQ","yhHPfcqrVeM","EP-SPW7PrS8","P3_YoyGgoD0","zgqVlRcI988","z5qWvrUKWOA","Mx4eSIp_TMk","5CLiYICFr6Q","qc42ADiXMes","da__eW9ePH0","Cb2DxF4lbEU","oxXd2gKTBVk","tLd82b1T80Q","VymKXTl0uhg","yfT4d7qi_U8","k3eQcJ07lGM","rGoqtUaxOeo","B2rbCZo19q4","qtZ99_3WcXo","XnBjaKGZI8s","KZAfczE3oR8","29IqOnY429Y","cS6MB-gOBMk","OpSw9Nk84HM","Llbnmn_2DAw","8hrYh00eRh4","yc731isWyfM","mI0rrFUDIUM","gly3Pc4v-ec","nE7QRLfkVKQ","7GzCj6aqKaQ","BOFhxBXif0A","JX77WhDvmrw","34UcpiL-zak","ullBJrda2_I","brR4wAsp53w","67RxAwi5waA","XmG6nc2kiZg","ZdOeX937-HM","cu6GtCqPO0M","KO8rtxteNHY","Iuzch4ny3xI","OvLlShr7XOs","Ey6XxzLuFKk","toKQcae72mY","5es0EtFicA8","VkM1zqw4v98","ADSMzCEnQ6g","iGgrDVkLrlA","tYBN1OuBQYI","DpFI3veCb7I","ElyLEAxxaxY","hrASPYH-z5s","JF4s4UhbT5Y","9SfmJOJFJ2Y","IvShLY40Sa4","JvSA0EDzhs8","gU5ZXViJHAg","mw6kBml3pM8","RzAl2zCnLX4","4e-0UeZ67gU","8tc7uFHOWRo","iVLuxcLqG34","f9WGw_M7sIw","xJY_vS7jhYk","m4s-No8eRGc","NavZMkmRDAU","J8T0VTbnFoo","Oq53dCstN-0","HEERC-TuBs8","clW4cIvf-Mc","aqTdA2QmXX0","vFdIZqG4dmM","ojMj94jxrXM","DAc6_4hmRfw","JGv8BymxET8","doxE-aDOxRw","hPE1MJV4x9E","zM6-VG7Z4qg","4SXQ_e6enMw","6m4nvlK5d6U","9tTv7fEPm6g","yxJSGvOUd5o","gHGTwMLuomg","A9ejFxzOLps","d4j_TnQO2tU","9u7aMXR67KE","WNh3SIK01xY","p9do0BUCGuw","X2muF1OcVHk","IXuxlA3mGec","9YGhDwK0z1g","j7EGHQEAxo4","rmMYEhSWMHY","0VuiU13fHiI","zK_3eMv7Dyw","E1Oi_MgdMK0","WgOuumd6c0M","yKQx4ejtIRw","3Db_AI1w8GY","Ihzqdiuq7rg","ypcivUglujU","D95TQM65zQQ","itKXcacp3SU","P8QxJjy7BPk","3kF72HDGUrY","Ja8d0SI1yCs","icD1RugM2-s","OGFe8B1GCqM","vV_lM5c5Has","4LvlDLwK478","9u7aMXR67KE","YSKrAJ-rC00","Pt-yBqZy99A","06Z_F8eUvHs","0kXkEPCaQhU","LDM9b1zzU8A","q973VoVgLLU","tcRohw3vSQI","czW7SJ7wNOQ","z45lLGOZa_U","hGYT7s8LEDs","UV49i9pqZjU","UV49i9pqZjU","-qtf91hwTf4","QNHNDxkT5vs","pKyvdsHf2VU","kBafj2tj0eo"]
+
+let player
+let current=0
+
+function onYouTubeIframeAPIReady(){
+
+player=new YT.Player("player",{
+videoId:ids[0],
+playerVars:{
+autoplay:1,
+mute:1,
+controls:0,
+playsinline:1,
+rel:0,
+modestbranding:1
+}
+})
+
+observe()
+
+}
+
+function observe(){
+
+let items=document.querySelectorAll(".item")
+
+let observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+let index=[...items].indexOf(entry.target)
+
+if(index!==current){
+
+current=index
+
+player.loadVideoById(ids[current])
+
+}
+
+}
+
+})
+
+},{threshold:0.7})
+
+items.forEach(el=>observer.observe(el))
+
+}
+
+</script>
+
+</body>
+</html>
