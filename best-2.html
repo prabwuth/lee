@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lee Best-2</title>
+<link rel="icon" href="https://img.icons8.com/pulsar-color/96/albanian-lek.png">
+<style>
+body { margin:0; background:#000; font-family: sans-serif; overflow: hidden; }
+.side-nav { position: fixed; right: 20px; top: 50%; transform: translateY(-50%); z-index: 9999; display: flex; flex-direction: column; gap: 12px; align-items: flex-end; opacity: 0.5; transition: opacity 0.3s; }
+.side-nav:hover { opacity: 1; }
+.search-container { position: relative; display: flex; align-items: center; }
+#vidSelect { display: none; width: 250px; padding: 12px; border-radius: 10px; background: rgba(30, 30, 30, 0.95); color: #fff; border: 2px solid #e53935; margin-right: 15px; font-size: 14px; outline: none; }
+.ctrl-group { display: flex; gap: 10px; }
+.btn-circle { background: #e53935; color: white; border: none; width: 55px; height: 55px; border-radius: 50%; font-size: 26px; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.6); transition: 0.2s; line-height: 1; }
+.btn-circle:active { transform: scale(0.9); }
+.container { height: 100vh; overflow-y: scroll; scroll-snap-type: y mandatory; }
+.yt-item { height: 100vh; scroll-snap-align: start; position: relative; width: 100%; }
+.yt-item iframe { position: absolute; width: 100%; height: 100%; border: 0; }
+</style>
+</head>
+<body>
+<div class="side-nav">
+  <div class="search-container">
+    <select id="vidSelect" onchange="handleNavigation(this.value); this.style.display='none';">
+      <option value="">-- เลือกวิดีโอ --</option>
+<option value="vid-0">Lee-1</option><option value="vid-1">Lee-2</option><option value="vid-2">Lee-3</option><option value="vid-3">Lee-4</option><option value="vid-4">Lee-5</option><option value="vid-5">Lee-6</option><option value="vid-6">Lee-7</option><option value="vid-7">Lee-8</option><option value="vid-8">Lee-9</option><option value="vid-9">Lee-10</option><option value="vid-10">Lee-11</option><option value="vid-11">Lee-12</option><option value="vid-12">Lee-13</option><option value="vid-13">Lee-14</option><option value="vid-14">Lee-15</option><option value="vid-15">Lee-16</option><option value="vid-16">Lee-17</option><option value="vid-17">Lee-18</option><option value="vid-18">Lee-19</option><option value="vid-19">Lee-20</option>
+    </select>
+    <button class="btn-circle" onclick="toggleSearch()" title="Search" style="font-size: 32px;">⌕</button>
+  </div>
+  <div class="ctrl-group">
+    <button class="btn-circle" onclick="playCurrentVideo()" title="Play">▶</button>
+    <button class="btn-circle" onclick="pauseAllVideos()" title="Pause All">⏸</button>
+  </div>
+</div>
+<div class="container" id="mainContainer">
+<div class="yt-item" id="vid-0"><iframe data-src="https://www.youtube.com/embed/g_X57OLSVE0?autoplay=1&mute=1&playsinline=1&loop=1&playlist=g_X57OLSVE0&enablejsapi=1" src="https://www.youtube.com/embed/g_X57OLSVE0?autoplay=1&mute=1&playsinline=1&loop=1&playlist=g_X57OLSVE0&enablejsapi=1" loading="lazy" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="yt-item" id="vid-1"><iframe data-src="https://www.youtube.com/embed/DSN2wn8fRhw?autoplay=1&mute=1&playsinline=1&loop=1&playlist=DSN2wn8fRhw&enablejsapi=1" src="https://www.youtube.com/embed/DSN2wn8fRhw?autoplay=1&mute=1&playsinline=1&loop=1&playlist=DSN2wn8fRhw&enablejsapi=1" loading="lazy" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="yt-item" id="vid-2"><iframe data-src="https://www.youtube.com/embed/8NcLdp1UBeU?autoplay=1&mute=1&playsinline=1&loop=1&playlist=8NcLdp1UBeU&enablejsapi=1"  loading="lazy" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="yt-item" id="vid-3"><iframe data-src="https://www.youtube.com/embed/xpv27-1jyD8?autoplay=1&mute=1&playsinline=1&loop=1&playlist=xpv27-1jyD8&enablejsapi=1"  loading="lazy" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="yt-item" id="vid-4"><iframe data-src="https://www.youtube.com/embed/jI6xMwGcOo0?autoplay=1&mute=1&playsinline=1&loop=1&playlist=jI6xMwGcOo0&enablejsapi=1"  loading="lazy" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="yt-item" id="vid-5"><iframe data-src="https://www.youtube.com/embed/Vv8EqYiVK2k?autoplay=1&mute=1&playsinline=1&loop=1&playlist=Vv8EqYiVK2k&enablejsapi=1"  loading="lazy" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="yt-item" id="vid-6"><iframe data-src="https://www.youtube.com/embed/d_4G27x_dew?autoplay=1&mute=1&playsinline=1&loop=1&playlist=d_4G27x_dew&enablejsapi=1"  loading="lazy" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="yt-item" id="vid-7"><iframe data-src="https://www.youtube.com/embed/sqA0_U-PLkI?autoplay=1&mute=1&playsinline=1&loop=1&playlist=sqA0_U-PLkI&enablejsapi=1"  loading="lazy" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="yt-item" id="vid-8"><iframe data-src="https://www.youtube.com/embed/5iBhMIcq8yM?autoplay=1&mute=1&playsinline=1&loop=1&playlist=5iBhMIcq8yM&enablejsapi=1"  loading="lazy" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="yt-item" id="vid-9"><iframe data-src="https://www.youtube.com/embed/oPRKptCP4ws?autoplay=1&mute=1&playsinline=1&loop=1&playlist=oPRKptCP4ws&enablejsapi=1"  loading="lazy" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="yt-item" id="vid-10"><iframe data-src="https://www.youtube.com/embed/E1vTOytnNc8?autoplay=1&mute=1&playsinline=1&loop=1&playlist=E1vTOytnNc8&enablejsapi=1"  loading="lazy" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="yt-item" id="vid-11"><iframe data-src="https://www.youtube.com/embed/TJGzTimO4ps?autoplay=1&mute=1&playsinline=1&loop=1&playlist=TJGzTimO4ps&enablejsapi=1"  loading="lazy" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="yt-item" id="vid-12"><iframe data-src="https://www.youtube.com/embed/8whm4beKXcI?autoplay=1&mute=1&playsinline=1&loop=1&playlist=8whm4beKXcI&enablejsapi=1"  loading="lazy" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="yt-item" id="vid-13"><iframe data-src="https://www.youtube.com/embed/V1CESbEHTCw?autoplay=1&mute=1&playsinline=1&loop=1&playlist=V1CESbEHTCw&enablejsapi=1"  loading="lazy" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="yt-item" id="vid-14"><iframe data-src="https://www.youtube.com/embed/M-yallYhrp4?autoplay=1&mute=1&playsinline=1&loop=1&playlist=M-yallYhrp4&enablejsapi=1"  loading="lazy" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="yt-item" id="vid-15"><iframe data-src="https://www.youtube.com/embed/AD-sHXSJQzw?autoplay=1&mute=1&playsinline=1&loop=1&playlist=AD-sHXSJQzw&enablejsapi=1"  loading="lazy" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="yt-item" id="vid-16"><iframe data-src="https://www.youtube.com/embed/bF7dsdfSNr0?autoplay=1&mute=1&playsinline=1&loop=1&playlist=bF7dsdfSNr0&enablejsapi=1"  loading="lazy" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="yt-item" id="vid-17"><iframe data-src="https://www.youtube.com/embed/Gh1YeoVr8_s?autoplay=1&mute=1&playsinline=1&loop=1&playlist=Gh1YeoVr8_s&enablejsapi=1"  loading="lazy" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="yt-item" id="vid-18"><iframe data-src="https://www.youtube.com/embed/nvQWITZ3TF0?autoplay=1&mute=1&playsinline=1&loop=1&playlist=nvQWITZ3TF0&enablejsapi=1"  loading="lazy" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="yt-item" id="vid-19"><iframe data-src="https://www.youtube.com/embed/aXLJw8CV4kQ?autoplay=1&mute=1&playsinline=1&loop=1&playlist=aXLJw8CV4kQ&enablejsapi=1"  loading="lazy" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+</div>
+<script>
+  let currentActiveVidId = "vid-0";
+  function toggleSearch() { let s = document.getElementById("vidSelect"); s.style.display = (s.style.display === "block") ? "none" : "block"; }
+  function pauseAllVideos() { document.querySelectorAll("iframe").forEach(f => { if(f.src) f.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', "*"); }); }
+  function playCurrentVideo() { let active = document.getElementById(currentActiveVidId); if(active) { let f = active.querySelector("iframe"); if(f && f.src) f.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', "*"); } }
+  function handleNavigation(id) { if(!id) return; currentActiveVidId = id; pauseAllVideos(); document.getElementById(id).scrollIntoView({behavior:"smooth"}); let f = document.getElementById(id).querySelector("iframe"); if(f.src) { setTimeout(() => { f.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', "*"); }, 600); } }
+  let observer = new IntersectionObserver(entries => { entries.forEach(e => { if(e.isIntersecting){ currentActiveVidId = e.target.id; let f = e.target.querySelector("iframe"); if(!f.src) f.src = f.dataset.src; } }); }, {threshold: 0.6});
+  document.querySelectorAll(".yt-item").forEach(el => { observer.observe(el); });
+</script>
+</body>
+</html>
