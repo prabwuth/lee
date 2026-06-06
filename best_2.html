@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lee Best - 2</title>
+
+<link rel="icon" href="https://img.icons8.com/pulsar-color/96/albanian-lek.png">
+
+<!-- Preconnect for faster loading -->
+<link rel="preconnect" href="https://www.youtube.com">
+<link rel="preconnect" href="https://i.ytimg.com">
+
+<style>
+
+body{
+margin:0;
+background:#000;
+}
+
+.container{
+height:100vh;
+overflow-y:scroll;
+scroll-snap-type:y mandatory;
+}
+
+.yt-item{
+height:100vh;
+scroll-snap-align:start;
+position:relative;
+}
+
+.yt-item iframe{
+position:absolute;
+width:100%;
+height:100%;
+border:0;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+
+<div class="yt-item">
+<iframe 
+data-src="https://www.youtube.com/embed/g_X57OLSVE0?autoplay=1&mute=1&playsinline=1&loop=1&playlist=g_X57OLSVE0" 
+src="https://www.youtube.com/embed/g_X57OLSVE0?autoplay=1&mute=1&playsinline=1&loop=1&playlist=g_X57OLSVE0" 
+loading="lazy"
+allow="autoplay; encrypted-media"
+allowfullscreen>
+</iframe>
+</div>
+
+
+</div>
+
+<script>
+
+let observer=new IntersectionObserver(entries=>{
+
+entries.forEach(e=>{
+
+let iframe=e.target.querySelector("iframe");
+
+if(e.isIntersecting){
+if(!iframe.src){
+iframe.src=iframe.dataset.src;
+}
+}
+
+});
+
+},{threshold:0.6});
+
+document.querySelectorAll(".yt-item").forEach(el=>{
+observer.observe(el);
+});
+
+</script>
+
+</body>
+</html>
